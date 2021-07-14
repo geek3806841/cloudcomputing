@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>3 Cloud Computing</title>
+
+    <link href="index.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
+</script>
+<script language="javascript">
+    function ShowRedo() 
+{
+
+        document.getElementById("img").src = "https://i.postimg.cc/g0b9JG0w/unfav.png";  
+    }
+
+    function ShowUndo() 
+{
+        document.getElementById("img").src = "https://i.postimg.cc/g0b9JG0w/unfav.png"; 
+    }
+</script>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-dark bg-mynav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Books Collections</a>
+         <a class="navbar-brand" href="https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/8e447cd8-6266-4210-86c2-d9f5ed217fa6" style="float:right;">Visualisations</a>
+          <a class="navbar-brand" href="#"  style="float:right;">My favourites</a>
+           <a class="navbar-brand" href="#">User</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="d-flex bd-highlight mb-3">
+        <div class="me-auto p-2 bd-highlight"><h2>My Collection of Books</div>
+        <div class="p-2 bd-highlight">
+          <button type="button" class="btn btn-secondary" onclick="showUserCreateBox()">Create</button>
+        </div>
+      </div>
+
+      <input id="myInput" type="text" placeholder="Search within collection..">
+      <br><br>
+
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <!-- <th scope="col">#</th> -->
+              <th scope="col">Book Image</th>
+              <th scope="col">Name</th>
+              <th scope="col">Author</th>
+              <th scope="col">Price</th>
+              <th scope="col">Category</th>
+              <th scope="col">ISBN</th>
+              <th scope="col">Action</th>
+              <th scope="col">Favourite Books*</th>
+            </tr>
+          </thead>
+          <tbody id="mytable">
+            <tr>
+              <th scope="row" colspan="5">Loading...</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>

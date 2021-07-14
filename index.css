@@ -1,0 +1,47 @@
+.bg-mynav {
+    background-color: #2c3e50;
+  }
+  
+  body {
+    font-size: 1.25rem;
+    background-color: #f6f8fa;
+  }
+  
+  td {
+      line-height: 3rem;
+      cursor: pointer;
+  }
+
+.btn-outline-danger {
+    /*color: #100d0d;*/
+    border-color: #0dcaf0;
+    /*background-color: black;*/
+}
+/*img {
+  height: 25px;
+}
+*/
+.hide {
+  display: none;
+}
+
+#loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: white;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#spinner {
+    animation: rotate 0.56s infinite linear;
+    width:50px;
+    height:50px;
+    border:12px solid rgb(255, 44, 90);
+    border-bottom:12px solid #fff;
+    border-radius:50%;
+    margin:0;
+}

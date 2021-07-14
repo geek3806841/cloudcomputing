@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>yourname</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">yourname.</td>
+                <td id="navigation">
+                    <a href="#work">work</a>
+                    <a href="#bio">about</a>
+                    <a href="">blog</a>
+                    <a href="#contact">contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>this is where you put your about or tagline</h1>
+                <button class="btn_one">Hire Me</button><br>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social"><i class="fab fa-medium"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>work</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1547922657-b370d1687eb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80">
+            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1549375463-8cbc18ca3f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80">
+            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1549366021-9f761d450615?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=650&q=80">
+            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1549309019-a1d77aeae74f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1547149666-769b42053e67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80">
+            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1547950515-e652d0f50b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1545342084-d03fe58ea023?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80">
+        </div>
+    </div>
+    <div id="bio">
+        <h1>about</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+    <div id="contact">
+        <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +1 234 567 8910</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; yourname@email.com</td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fas fa-fax"></i> &nbsp; +1 234 567 8910</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Street 123,<br>
+                                        blah blah city,<br>
+                                        blah blah country
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social"><i class="fab fa-facebook"></i></a>
+                                        <a class="social"><i class="fab fa-twitter"></i></a>
+                                        <a class="social"><i class="fab fa-instagram"></i></a>
+                                        <a class="social"><i class="fab fa-dribbble"></i></a>
+                                        <a class="social"><i class="fab fa-medium"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" class="form-control" id="carid" placeholder="Car ID" required>
+                            <input type="text" class="form-control" id="name" placeholder="Name" required>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required><br>
+                            <textarea placeholder="your message" id="message" required rows="5"></textarea><br>
+                            <button type="button" class="btn_one" onclick="show()">Submit</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+          </div>
+
+<div class="container">
+    <div class="d-flex bd-highlight mb-3">
+      <div class="me-auto p-2 bd-highlight"><h2>Users</div>
+      <div class="p-2 bd-highlight">
+        <button type="button" class="btn btn-secondary" onclick="showUserCreateBox()">Create</button>
+     </div>
+   </div>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Id</th>
+            <th scope="col">Email</th>
+            <th scope="col">Message</th>
+            <th scope="col">Username</th>
+            <!-- <th scope="col">Action</th> -->
+          </tr>
+        </thead>
+        <tbody id="mytable">
+          <tr>
+            <th scope="row" colspan="5">Loading...</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+    <div id="footer">
+        made on earth by a human <br> <a href="https://imfunniee.github.io">imfunniee</a>
+    </div>
+<script src="../static/js/index.js" type="text/javascript"></script>
+<script type="text/javascript">
+function show(){
+  var carid = document.getElementById('carid').value;
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+  var api = "https://l3leiqrmof.execute-api.us-east-1.amazonaws.com/prod/carsinfo"
+  var params = {
+    "carid":carid,
+    "name":name,
+    "email":email,
+    "message":message
+  };
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function(){
+     if (this.readyState == 4 && this.status == 200){
+       alert(xhttp.responseText);
+     }
+  };
+  xhttp.open("POST", api, false);
+  var a = xhttp.send(JSON.stringify(params));
+  document.getElementById('name').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('message').value = '';
+}
+
+function loadTable() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "https://wggt89lje6.execute-api.us-east-1.amazonaws.com/prod");
+    xhttp.send();
+      console.log(this.responseText);
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        console.log(this.responseText);
+        var trHTML = '';
+        const objects = JSON.parse(this.responseText);
+        for (let object of objects) {
+          trHTML += '<tr>';
+          trHTML += '<td>'+object['carId']+'</td>';
+          // trHTML += '<td><img width="50px" src="'+object['avatar']+'" class="avatar"></td>';
+          trHTML += '<td>'+object['email']+'</td>';
+          trHTML += '<td>'+object['message']+'</td>';
+          trHTML += '<td>'+object['name']+'</td>';
+          trHTML += '<td><button type="button" class="btn btn-outline-secondary" onclick="showUserEditBox('+object['carId']+')">Edit</button>';
+          trHTML += '<button type="button" class="btn btn-outline-danger" onclick="userDelete('+object['carId']+')">Del</button></td>';
+          trHTML += "</tr>";
+        }
+        document.getElementById("mytable").innerHTML = trHTML;
+      }
+    };
+  }
+  loadTable();
+  function showUserCreateBox() {
+  Swal.fire({
+    title: 'Create user',
+    html:
+      '<input id="id" type="hidden">' +
+      '<input id="fname" class="swal2-input" placeholder="First">' +
+      '<input id="lname" class="swal2-input" placeholder="Last">' +
+      '<input id="username" class="swal2-input" placeholder="Username">' +
+      '<input id="email" class="swal2-input" placeholder="Email">',
+    focusConfirm: false,
+    preConfirm: () => {
+      userCreate();
+    }
+  })
+}
+
+function userCreate() {
+  const fname = document.getElementById("fname").value;
+  const lname = document.getElementById("lname").value;
+  const username = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
+
+  const xhttp = new XMLHttpRequest();
+  xhttp.open("POST", "https://www.mecallapi.com/api/users/create");
+  xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+  xhttp.send(JSON.stringify({
+    "fname": fname, "lname": lname, "username": username, "email": email,
+    "avatar": "https://www.mecallapi.com/users/cat.png"
+  }));
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      const objects = JSON.parse(this.responseText);
+      Swal.fire(objects['message']);
+      loadTable();
+    }
+  };
+}
+//get request
+// window.onload = function() {
+// theUrl = "https://l3leiqrmof.execute-api.us-east-1.amazonaws.com/prod"
+// function httpGet(theUrl)
+// {
+//     var xmlHttp = new XMLHttpRequest();
+//     xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+//     xmlHttp.send( null );
+//     return xmlHttp.responseText;
+//     console.log(this.responseText);
+//   }
+// }
+// window.onload = function() {
+// function httpGetAsync(theUrl, callback)
+//    {
+//     var xmlHttp = new XMLHttpRequest();
+//     xmlHttp.onreadystatechange = function() {
+//         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+//             callback(xmlHttp.responseText);
+//               console.log(this.responseText);
+//     }
+//     xmlHttp.open("GET", theUrl, true); // true for asynchronous
+//     xmlHttp.send(null);
+//     }
+// }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
